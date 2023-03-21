@@ -19,7 +19,7 @@ int main(void)
 			
 		if (reminder > 5)
 		{
-			printf("Last digit of %d is %d and greater than 5\n", n, reminder);
+			printf("Last digit of %d is %d and is greater than 5\n", n, reminder);
 		}
 		else if (reminder < 6 && reminder !=0)
 		{
