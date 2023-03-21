@@ -4,18 +4,18 @@
 
 /**
  * main - the starting point of the program.
+ * @reminder: the last digit of the number n.
  *
  * Return: always 0
  */
 int main(void)
 {
 		int n;
+		int reminder;
 
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
-		
-		int reminder = n % 10;
-		
+			
 		if (reminder > 5)
 		{
 			printf("Last digit of %d is %d and greater than 5\n", n, reminder);
