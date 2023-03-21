@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-/** 
+/**
  * main - the entry point of the program.
  * @n: random number.
  *
- * return: always 0
+ * Return: always 0
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 		n = rand() - RAND_MAX / 2;
 
 		if (n > 0)
-		{	
+		{
 			printf("%d is positive\n", n);
 		}
 		else if (n < 0)
