@@ -4,7 +4,6 @@
 
 /**
  * main - the starting point of the program.
- * @reminder: the last digit of the number n.
  *
  * Return: always 0
  */
