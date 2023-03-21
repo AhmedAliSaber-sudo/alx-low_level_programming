@@ -15,7 +15,7 @@ int main(void)
 
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
-		reminder = 0;
+		reminder = n % 10;
 			
 		if (reminder > 5)
 		{
