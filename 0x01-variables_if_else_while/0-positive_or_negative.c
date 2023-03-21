@@ -2,7 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* the main functuion for knowing if n is positive or negative or zero */
+/** 
+ * main - the entry point of the program.
+ * @n: random number.
+ *
+ * return: always 0
+ */
+
 int main(void)
 {
 		int n;
