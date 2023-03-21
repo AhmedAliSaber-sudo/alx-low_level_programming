@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	
-	for (int numbers = 0; numbers > 10; numbers++)
+	int numbers;
+
+	for (numbers = 0; numbers > 10; numbers++)
 	{
 		printf("%d", numbers);
 	}
