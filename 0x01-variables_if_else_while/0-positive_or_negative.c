@@ -4,7 +4,6 @@
 
 /**
  * main - the entry point of the program.
- * @n: random number.
  *
  * Return: always 0
  */
