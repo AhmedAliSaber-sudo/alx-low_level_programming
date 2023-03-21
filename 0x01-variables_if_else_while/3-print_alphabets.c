@@ -6,7 +6,7 @@
  * Return: always 0 (success).
  */
 
-int main (void)
+int main(void)
 {
 	char lower_alpha = 'a';
 	char capital_alpha = 'A';
