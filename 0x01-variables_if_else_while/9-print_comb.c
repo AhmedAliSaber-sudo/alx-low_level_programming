@@ -2,7 +2,7 @@
 
 /**
  * main - the starting point
- * 
+ *
  * Return: Always 0 (Success)
  */
 
