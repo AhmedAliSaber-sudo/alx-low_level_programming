@@ -11,7 +11,6 @@
 
 int _srtlen(char *s)
 {
-	int i;
 	int len = 0;
 
 	while (*s != '\0')
