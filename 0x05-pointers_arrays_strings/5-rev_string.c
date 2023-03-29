@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * print_rev - a function that prints a string, in reverse.
+ * rev_string - a function that prints a string, in reverse.
  *
  * @s: pointer varivable.
  *
