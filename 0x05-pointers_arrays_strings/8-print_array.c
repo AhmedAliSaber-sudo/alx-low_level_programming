@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts2 - a function that prints n elements of an array of integers.
+ * print_array - a function that prints n elements of an array of integers.
  *
  * @a: pointer varivable that point to the first element of the array.
  * @n: integer variable.
