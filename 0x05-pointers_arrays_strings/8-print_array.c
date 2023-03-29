@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * puts2 -  a function that prints n elements of an array of integers, followed by a new line.
+ * puts2 - a function that prints n elements of an array of integers.
  *
  * @a: pointer varivable that point to the first element of the array.
+ * @n: integer variable.
  *
  * Return: void.
  */
