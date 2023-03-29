@@ -9,14 +9,13 @@
  * Return: void.
  */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
-	int i, j;
-	char temp;
-	for (i = 0, j = _strlen(s) - 1; i < j; i++, j--)
+	int i;
+
+	for (i = strlen(s) - 1; i >= 0; i--)
 	{
-		temp = s[i];
-		s[i] = s[j];
-		s[j] = temp;
-		}
+		putchar(s[i]);
+	}
+	putchar('\n');
 }
