@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts2 - a function that prints half of a string, followed by a new line.
+ * puts_half - a function that prints half of a string, followed by a new line.
  *
  * @str: pointer varivable.
  *
@@ -11,14 +11,18 @@
 
 void puts_half(char *str)
 {
-	int i = 0;
+	int length = strlen(str);
+	int start = length / 2;
 
-	while (*str != '\0')
+	if (length % 2 != 0)
 	{
-		putchar(str[i]);
-		i++;
-		str++;
+		start = (length - 1) / 2;
 	}
 
-	putchar('\n');
+	for (int i = start; i < length; i++)
+	{
+		printf("%c", str[i]);
+	}
+
+	printf("\n");
 }
