@@ -1,0 +1,1 @@
+This folder is for the project 0x08-recursion for the ALX program in low-level programming and the C language. All tasks solved in this project were solved by me (Ahmed Ali) using vim in the terminal on Kali Linux. They were compiled on my local machine and revised by the checker of the ALX intranet.
