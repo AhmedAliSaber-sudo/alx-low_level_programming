@@ -13,7 +13,7 @@ int _sqrt_finder(int n, int i)
 	else if (i * i > n)
 		return (-1);
 	else
-		return (_sqrt_finder(n, i + 1);
+		return (_sqrt_finder(n, i + 1));
 }
 
 /**
@@ -27,5 +27,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return (_sqrt_finder(n, 0);
+		return (_sqrt_finder(n, 0));
 }
