@@ -7,13 +7,13 @@
  * Return: 1 if prime, 0 if not, or recursive function call
  */
 
-int is_prime_helper(int n, int divisor)
+int is_prime_helper(int n, int i)
 {
-	if (n == divisor)
+	if (n == i)
 		return (1);
-	if (n % divisor == 0)
+	if (n % i == 0)
 		return (0);
-	return (is_prime(n, divisor + 1));
+	return (is_prime_helper(n, i + 1));
 
 }
 
@@ -25,12 +25,12 @@ int is_prime_helper(int n, int divisor)
 
 int is_prime_number(int n)
 {
-	int divisor = 3;
+	int i = 3;
 
 	if (n % 2 == 0 || n < 2)
 		return (0);
 	if (n == 2)
 		return (1);
 
-	return (is_prime(n, divisor));
+	return (is_prime(n, i));
 }
