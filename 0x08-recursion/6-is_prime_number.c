@@ -3,7 +3,7 @@
 /**
  * is_prime_helper - recursively divide by higher divisor, skip even nums
  * @n: number to check if prime
- * @divisor: divisor
+ * @i: divisor
  * Return: 1 if prime, 0 if not, or recursive function call
  */
 
@@ -32,5 +32,5 @@ int is_prime_number(int n)
 	if (n == 2)
 		return (1);
 
-	return (is_prime(n, i));
+	return (is_prime_helper(n, i));
 }
