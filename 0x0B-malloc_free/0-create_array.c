@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * creat_array - creat array of chars (string).
