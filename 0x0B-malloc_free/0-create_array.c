@@ -4,7 +4,7 @@
 /**
  * create_array - create array of chars (string).
  * @size: the size of the array.
- * @char: intitalize the array using this char.
+ * @c: intitalize the array using this char.
  * Return: pointer to array.
  */
 
@@ -12,7 +12,7 @@ char *create_array(unsigned int size, char c)
 {
 	int i = 0;
 	char *arr;
-       	arr = malloc(sizeof(char) * size); /* allocat memory */
+	arr = malloc(sizeof(char) * size); /* allocat memory */
 
 	if (size <= 0 || arr == NULL) /* validate the size and memory */
 		return (NULL);
