@@ -12,6 +12,7 @@ char *create_array(unsigned int size, char c)
 {
 	int i = 0;
 	char *arr;
+
 	arr = malloc(sizeof(char) * size); /* allocat memory */
 
 	if (size <= 0 || arr == NULL) /* validate the size and memory */
