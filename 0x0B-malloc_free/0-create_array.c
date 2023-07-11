@@ -1,4 +1,3 @@
-#include <stdlib>
 #include "main.h"
 /**
  * creat_array - creat array of chars (string).
