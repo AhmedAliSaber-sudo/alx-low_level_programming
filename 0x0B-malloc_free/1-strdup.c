@@ -2,7 +2,7 @@
 #include <string.h>
 #include "main.h"
 /**
- * _strdup - returns a pointer to allocated space which contain a copy of string
+ * _strdup - returns a pointer to a copy of string.
  * @str: string.
  * Return: pointer of char.
  */
