@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * _strdup - returns a pointer to allocated space which contain a copy of string
@@ -8,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-	int length, i;
+	int len, i;
 	char *new_str;
 
 	if (str == NULL)
