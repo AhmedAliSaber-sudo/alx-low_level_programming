@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0 || arr == NULL) /* validate the size and memory */
 		return (NULL);
 
-	while (i < size) /* set array values to char c */
+	while (i < (int)size) /* set array values to char c */
 	{
 		*(arr + 1) = c;
 		i++;
