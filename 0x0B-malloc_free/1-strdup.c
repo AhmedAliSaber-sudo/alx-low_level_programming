@@ -17,7 +17,7 @@ char *_strdup(char *str)
 
 	len = strlen(str); /* get the length of the string */
 
-	new_str = (char *) malloc((leng + 1) * sizeof(char));
+	new_str = (char *) malloc((len + 1) * sizeof(char));
 
 	if (new_str == NULL)
 		return (NULL);
@@ -28,3 +28,4 @@ char *_strdup(char *str)
 	}
 	new_str[len] = '\0';
 	return (new_str);
+}
