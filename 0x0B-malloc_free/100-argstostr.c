@@ -20,7 +20,7 @@ char *argstostr(int ac, char **av)
 	/* find length to malloc */
 	for (i = 0; i < ac; i++)
 	{
-		len += _strlen(av[i]);
+		len += strlen(av[i]);
 	}
 	len += (ac + 1); /* add space for newlines and null terminator */
 
@@ -36,7 +36,7 @@ char *argstostr(int ac, char **av)
 	/* insert each arg into *str */
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < _strlen(av[i]); j++)
+		for (j = 0; j < strlen(av[i]); j++)
 		{
 			s[k++] = av[i][j];
 		}
