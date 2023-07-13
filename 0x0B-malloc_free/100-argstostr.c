@@ -1,47 +1,38 @@
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
-
+#include <string.h>
+#include <stdlib.h>
 /**
  * argstostr - concatenates all the arguments of your program
- * @ac: argc
- * @av: arguments
- * Return: pointer to array
+ * @ac: count
+ * @av: arry
+ * Return: concat args
  */
 
 char *argstostr(int ac, char **av)
 {
-	char *s;
-	size_t len = 0, i, j, k = 0;
+	int i, total_len, pos, j;
+	char *new_arr;
 
-	if (ac == 0 || av == NULL) /* validate input */
-		return (NULL);
-
-	/* find length to malloc */
+	if (ac == 0 || av == NULL)
+	{
+	return (NULL);
+	}
 	for (i = 0; i < ac; i++)
 	{
-		len += strlen(av[i]);
+	total_len += strlen(av[i]) + 1;
 	}
-	len += (ac + 1); /* add space for newlines and null terminator */
-
-	/* allocate memory and free if error */
-	s = malloc(len * sizeof(char));
-
-	if (s == NULL)
+	new_arr = (char *)malloc(total_len * sizeof(char));
+	if (new_arr == NULL)
 	{
-		free(s);
-		return (NULL);
+	return (NULL);
 	}
-
-	/* insert each arg into *str */
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; j < strlen(av[i]); j++)
-		{
-			s[k++] = av[i][j];
-		}
-		s[k++] = '\n';
+	for (j = 0; av[i][j] != '\0'; j++)
+	{
+	new_arr[pos] = av[i][j];
+	_putchar('\n');
 	}
-
-	return (s);
+	new_arr[pos] = '\0';
+	return (new_arr);
 }
