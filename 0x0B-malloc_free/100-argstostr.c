@@ -14,25 +14,25 @@ char *argstostr(int ac, char **av)
 	char *new_arr;
 
 	if (ac == 0 || av == NULL)
-	{
-	return (NULL);
-	}
+		return (NULL);
+
 	for (i = 0; i < ac; i++)
-	{
-	total_len += strlen(av[i]) + 1;
-	}
+		total_len += strlen(av[i]) + 1;
+
 	new_arr = (char *)malloc(total_len * sizeof(char));
+
 	if (new_arr == NULL)
-	{
-	return (NULL);
-	}
+		return (NULL);
+
 	for (i = 0; i < ac; i++)
 	{
-	for (j = 0; av[i][j] != '\0'; j++)
-	{
-	new_arr[pos] = av[i][j];
-	_putchar('\n');
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			new_arr[pos] = av[i][j];
+			_putchar('\n');
+		}
 	}
+
 	new_arr[pos] = '\0';
 	return (new_arr);
 }
