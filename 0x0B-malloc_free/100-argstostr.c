@@ -12,7 +12,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	int len = 0, i, j, k = 0;
+	size_t len = 0, i, j, k = 0;
 
 	if (ac == 0 || av == NULL) /* validate input */
 		return (NULL);
