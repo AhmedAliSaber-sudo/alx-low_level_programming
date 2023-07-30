@@ -5,7 +5,7 @@
 
 /**
  * strtow - splits a string into words.
- * str: string.
+ * @str: string.
  * Return: a pointer to an array of strings.
  */
 
