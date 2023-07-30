@@ -28,5 +28,9 @@ void _print_rev_recursion(char *s);
  * @s: string
  */
 
+int is_palindrome(char *s);
+
+
+int wildcmp(char *s1, char *s2);
 
 #endif
