@@ -3,7 +3,7 @@
 /**
  * pop_listint - deletes hte head node and returns the head node's data.
  * @head: points to the linked list.
- * Rerturn: the head node's data or 0 if the linked list is empty.
+ * Return: the head node's data or 0 if the linked list is empty.
  */
 
 int pop_listint(listint_t **head)
