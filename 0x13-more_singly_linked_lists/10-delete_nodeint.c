@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * deleted_nodeint_at_index - delete a node at given position.
+ * delete_nodeint_at_index - delete a node at given position.
  * @head: points to the head of linked list.
  * @index: the index of the deleted node.
  * Return: 1 if succeded, -1 if failed.
