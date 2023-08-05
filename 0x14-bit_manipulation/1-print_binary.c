@@ -7,13 +7,16 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
-	unsigned long int mask;
 
-	for (i = (sizeof(n) * 8 - 1); i >= 0; i--)
+	unsigned long int mask = 1UL << (sizeof(n) * 8 - 1);
+
+	while (mask > 0)
 	{
-		mask = (1 << i);
+		if ((n & mask) == 0)
+			printf("0");
+		else
+			printf("1");
 
-		putchar((n & mask) ? '1' : '0');
+		mask >>= 1;
 	}
 }
