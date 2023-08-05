@@ -8,7 +8,7 @@
 void print_binary(unsigned long int n)
 {
 
-	unsigned long int mask = 1UL << (sizeof(n) * 8 - 1);
+	unsigned long int mask = 1UL << (sizeof(n) * CHAR_BIT - 1);
 
 	while (mask > 0)
 	{
