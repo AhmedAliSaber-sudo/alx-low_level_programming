@@ -17,11 +17,11 @@ void print_binary(unsigned long int n)
 		copy >>= 1;
 	}
 
-	mask <<= length;
+	mask <<= (length - 1);
 
-	while (length > 0)
+	while (mask > 0)
 	{
-		if (n & mask)
+		if ((n & mask))
 			printf("1");
 		else
 			printf("0");
