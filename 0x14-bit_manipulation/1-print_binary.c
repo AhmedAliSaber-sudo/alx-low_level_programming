@@ -7,26 +7,27 @@
 
 void print_binary(unsigned long int n)
 {
-	int length = 0;
-	unsigned long int copy = n;
-	unsigned long int mask = 1;
 
-	while (n > 0)
+	unsigned long int copy = n, mask = 1;
+	int length = 0;
+
+	while (copy > 0)
 	{
 		length++;
 		copy >>= 1;
 	}
+	length -= 1;
 
-	mask <<= (length - 1);
+	if (length > 0)
+		mask = mask << length;
 
 	while (mask > 0)
 	{
-		if ((n & mask))
-			printf("1");
+		if (n & mask)
+			_putchar('1');
 		else
-			printf("0");
+			_putchar('0');
 
 		mask >>= 1;
 	}
-	printf("\n");
 }
