@@ -6,7 +6,6 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-// the protoypes of the functions //
 
 ssize_t read_textfile(const char *filename, size_t letters);
 
