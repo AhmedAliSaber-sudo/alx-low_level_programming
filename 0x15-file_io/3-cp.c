@@ -36,20 +36,24 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while (n_read = read(file_from, buffer, BUFFER_SIZE) > 0)
+	while ((n_read = read(file_from, buffer, BUFFER_SIZE)) > 0)
 	{
-		if (n_read == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
-			exit(98);
-		}
-
 		n_written = write(file_to, buffer, n_read);
-		if (n_written == -1)
+		if (n_written != n_read)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close(file_from);
+			close(file_to);
 			exit(99);
 		}
+	}
+	
+	if (n_read == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		close(file_from);
+		close(file_to);
+		exit(98);
 	}
 
 	if (close(file_from) == -1)
