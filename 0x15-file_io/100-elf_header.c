@@ -115,7 +115,7 @@ void print_elf_header(Elf64_Ehdr *ehdr)
 				break;
 			}
 
-			if ((ehdr->e_type >= ET_LOUSER) && (ehdr->e_type <= ET_HIUSER)) {
+			if ((ehdr->e_type >= SHT_LOUSER) && (ehdr->e_type <= SHT_HIUSER)) {
 				printf("<application specific>: %x\n", ehdr->e_type);
 				break;
 			}
@@ -130,7 +130,7 @@ void print_elf_header(Elf64_Ehdr *ehdr)
 				break;
 			}
 
-			if ((ehdr->e_type >= ET_LOUSER) && (ehdr->e_type <= ET_HIUSER)) {
+			if ((ehdr->e_type >= SHT_LOUSER) && (ehdr->e_type <= SHT_HIUSER)) {
 				printf("<application specific>: %x\n", ehdr->e_type);
 				break;
 			}
@@ -145,7 +145,7 @@ void print_elf_header(Elf64_Ehdr *ehdr)
 				break;
 			}
 
-			if ((ehdr->e_type >= ET_LOUSER) && (ehdr->e_type <= ET_HIUSER)) {
+			if ((ehdr->e_type >= SHT_LOUSER) && (ehdr->e_type <= SHT_HIUSER)) {
 				printf("<application specific>: %x\n", ehdr->e_type);
 				break;
 			}
