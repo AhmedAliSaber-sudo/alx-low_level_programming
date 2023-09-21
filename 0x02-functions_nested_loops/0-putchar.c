@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - print _putcahr
- * @str: an array that hold a stream of chars to make a string
- *
- * Return: alwaus return 0
+ * main - print _putchar
+ * @str: an array that hold a stream of chars to make a string.
+ * Return: always return 0
  */
 
 int main(void)
