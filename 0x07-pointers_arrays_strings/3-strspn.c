@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _strspn - return length of string that matches values consistently
-* @s: string to search
-* @accept: target matches
-* Return: number of bytes consecutively matched
+* _strspn - gets the length of a prefix substring.
+* @s: string to search in.
+* @accept: target matches.
+* Return: number of bytes that matches.
 */
 
 unsigned int _strspn(char *s, char *accept)
@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		if (strchr(accept, *s))
+		if (_strchr(s, *accept))
 		{
 			count++;
 		}
